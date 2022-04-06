@@ -1,4 +1,4 @@
 <button type="button" class="btn btn-nav-verde" (click)="onClick()" [disabled]="disabled" style="background-color:{{color}}"
-    attr.data-bs-toggle={{toggle}} attr.data-bs-target={{target}} attr.data-bs-dismiss={{dismiss}}>
+    [ngClass]="{'tamanho' : block=='true'}"  attr.data-bs-toggle={{toggle}} attr.data-bs-target={{target}} attr.data-bs-dismiss={{dismiss}}>
     {{title}}
 </button>

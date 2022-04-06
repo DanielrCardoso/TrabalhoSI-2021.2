@@ -1,9 +1,8 @@
 .btn-nav-verde{
-    background-color: gray;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 14px;
-    font-size: small;
+    font-size: 32px;
+    color: #fff;
+    border:none;
+    border-radius: 16px;
 }
 .btn-nav-verde i{
 
@@ -11,4 +10,7 @@
 .btn-nav-verde .separator{
     height: 100%;
     margin-right: 5px;
+}
+.tamanho{
+    width: 100%;
 }

@@ -11,9 +11,10 @@ import { TelaForumComponent } from './modules/forum/tela-forum/tela-forum.compon
 import { TelaAulasComponent } from './modules/cursos/tela-aulas/tela-aulas.component';
 import { ItensComponent } from './itens/itens.component';
 import { BtnDefaultComponent } from './shared/btn-default/btn-default.component';
+import { MenuInferiorComponent } from './shared/menu-inferior/menu-inferior.component';
 
 @NgModule({
-  declarations: [AppComponent, TelaLoginComponent, TelaInicialComponent, TelaCadastroComponent, TelaPerfilComponent, TelaDicasComponent, TelaForumComponent, TelaAulasComponent, ItensComponent, BtnDefaultComponent],
+  declarations: [AppComponent, TelaLoginComponent, TelaInicialComponent, TelaCadastroComponent, TelaPerfilComponent, TelaDicasComponent, TelaForumComponent, TelaAulasComponent, ItensComponent, BtnDefaultComponent, MenuInferiorComponent],
   imports: [BrowserModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

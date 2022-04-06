@@ -9,7 +9,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class BtnDefaultComponent {
   @Input() title!: string;
   @Input() color!: string;
-  @Input() block!: boolean;
+  @Input() block!: string;
   @Input() disabled!: boolean | Function;
   @Input() toggle!: string;
   @Input() target!: string;
