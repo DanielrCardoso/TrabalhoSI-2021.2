@@ -13,9 +13,10 @@ import { ItensComponent } from './itens/itens.component';
 import { BtnDefaultComponent } from './shared/btn-default/btn-default.component';
 import { MenuInferiorComponent } from './shared/menu-inferior/menu-inferior.component';
 import { CardDicaComponent } from './shared/card-dica/card-dica.component';
+import { BarraSuperiorComponent } from './shared/barra-superior/barra-superior.component';
 
 @NgModule({
-  declarations: [AppComponent, TelaLoginComponent, TelaInicialComponent, TelaCadastroComponent, TelaPerfilComponent, TelaDicasComponent, TelaForumComponent, TelaAulasComponent, ItensComponent, BtnDefaultComponent, MenuInferiorComponent, CardDicaComponent],
+  declarations: [AppComponent, TelaLoginComponent, TelaInicialComponent, TelaCadastroComponent, TelaPerfilComponent, TelaDicasComponent, TelaForumComponent, TelaAulasComponent, ItensComponent, BtnDefaultComponent, MenuInferiorComponent, CardDicaComponent, BarraSuperiorComponent],
   imports: [BrowserModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
