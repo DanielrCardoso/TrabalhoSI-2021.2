@@ -6,8 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tela-dicas.component.scss']
 })
 export class TelaDicasComponent implements OnInit {
+  dicas
 
-  constructor() { }
+  constructor() { 
+    this.dicas=[
+      {
+        tituloDica:"dica 01",
+        dica:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+      {
+        tituloDica:"dica 02",
+        dica:"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+      },
+      {
+        tituloDica:"dica 03",
+        dica:"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+      },
+    ]
+  }
 
   ngOnInit(): void {
   }
