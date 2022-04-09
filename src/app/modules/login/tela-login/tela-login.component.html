@@ -1,1 +1,28 @@
-<p>tela-login works!</p>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <label for="nome_usuario">Nome de usuário</label>
+  <input type="text" formControlName="nomeUsuario" id="nome_usuario" />
+
+  <label for="senha_usuario">Senha</label>
+  <input type="password" formControlName="senhaUsuario" id="senha_usuario" />
+
+  <div>
+    <div class="container-btn">
+      <app-btn-default
+        title="Entrar"
+        color="#86AFDF"
+        block="true"
+        buttonType="submit"
+      ></app-btn-default>
+    </div>
+    <p>OU</p>
+    <div class="container-btn">
+      <app-btn-default
+        title="Criar Conta"
+        color="#86AFDF"
+        block="true"
+      ></app-btn-default>
+    </div>
+  </div>
+</form>
+
+<p>Esqueceu sua senha? clique aqui.</p>
