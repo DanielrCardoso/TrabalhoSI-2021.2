@@ -14,10 +14,25 @@ import { BtnDefaultComponent } from './shared/btn-default/btn-default.component'
 import { MenuInferiorComponent } from './shared/menu-inferior/menu-inferior.component';
 import { CardDicaComponent } from './shared/card-dica/card-dica.component';
 import { BarraSuperiorComponent } from './shared/barra-superior/barra-superior.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, TelaLoginComponent, TelaInicialComponent, TelaCadastroComponent, TelaPerfilComponent, TelaDicasComponent, TelaForumComponent, TelaAulasComponent, ItensComponent, BtnDefaultComponent, MenuInferiorComponent, CardDicaComponent, BarraSuperiorComponent],
-  imports: [BrowserModule],
+  declarations: [
+    AppComponent,
+    TelaLoginComponent,
+    TelaInicialComponent,
+    TelaCadastroComponent,
+    TelaPerfilComponent,
+    TelaDicasComponent,
+    TelaForumComponent,
+    TelaAulasComponent,
+    ItensComponent,
+    BtnDefaultComponent,
+    MenuInferiorComponent,
+    CardDicaComponent,
+    BarraSuperiorComponent,
+  ],
+  imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
