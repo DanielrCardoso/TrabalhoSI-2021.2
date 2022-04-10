@@ -1,1 +1,34 @@
-<p>tela-forum-criar-pergunta works!</p>
+<app-barra-superior></app-barra-superior>
+<form [formGroup]="formCadastroPergunta" (ngSubmit)="onSubmit()">
+  <label for="titulo_pergunta">
+    <input
+      placeholder="Título da sua dúvida."
+      type="text"
+      id="titulo_pergunta"
+      formControlName="tituloPergunta"
+    />
+  </label>
+  <label for="corpo_pergunta">
+    <input
+      placeholder="Descreva sua dúvida."
+      type="text"
+      id="corpo_pergunta"
+      formControlName="corpoPergunta"
+    />
+  </label>
+
+  <div class="options">
+    <div class="container-btn">
+      <app-btn-default
+        title="Publicar"
+        color="#86AFDF"
+        block="true"
+        buttonType="submit"
+        width="250px"
+        height="50px"
+        [disabled]="!formCadastroPergunta.valid"
+      ></app-btn-default>
+    </div>
+  </div>
+</form>
+<app-menu-inferior></app-menu-inferior>
