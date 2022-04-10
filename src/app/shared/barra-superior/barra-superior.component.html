@@ -1,6 +1,6 @@
 <div class="container-barra-superior" *ngIf="visible">
-    <div class="sair" *ngIf="sair">Sair</div>
-    <div class="voltar" *ngIf="!sair">Voltar</div>
+    <div class="sair" *ngIf="sair" routerLink="/">Sair</div>
+    <div class="voltar" *ngIf="!sair" routerLink="{{voltar}}">Voltar</div>
 
     <div class="perfil">Perfil</div>
 </div>

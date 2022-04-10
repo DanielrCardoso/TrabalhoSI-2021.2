@@ -11,19 +11,29 @@ import { filter, pairwise } from 'rxjs/operators';
 
 
 export class BarraSuperiorComponent implements OnInit {
-  sair = "sair"
+  sair !:boolean
+  voltar = "/"
   visible!: boolean
 
   constructor(private route: Router) {
     route.events.pipe(filter((evt: any) => evt instanceof RoutesRecognized), pairwise())
       .subscribe((events: RoutesRecognized[]) => {
         var url = events[1].urlAfterRedirects
+        var previousUrl = events[0].urlAfterRedirects
         if (url.includes('login') || url.includes('cadastro')) {
           this.visible = false
         }
         else {
           this.visible = true
         }
+
+        if(url.includes("/dicas") || url.includes("/forum") || url.includes("/aulas")){
+          this.sair=true
+        }
+        // else if(url.includes("/aulas")){
+        //   this.sair=false
+        //   this.voltar = previousUrl
+        // }
       });
   }
 
