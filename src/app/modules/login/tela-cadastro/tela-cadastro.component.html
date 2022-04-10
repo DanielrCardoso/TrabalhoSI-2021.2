@@ -1,0 +1,67 @@
+<div class="container-login">
+  <form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+    <div class="box">
+      <label for="nome_usuario">Nome de usuário:</label>
+      <input
+        type="text"
+        formControlName="nomeUsuario"
+        id="nome_usuario"
+        placeholder="Insira seu usuario"
+      />
+    </div>
+
+    <div class="box">
+      <label for="senha_usuario">Senha:</label>
+      <input
+        type="password"
+        formControlName="senhaUsuario"
+        id="senha_usuario"
+        placeholder="Insira sua senha"
+      />
+    </div>
+
+    <div class="box">
+      <label for="confirmar_senha_usuario">Senha:</label>
+      <input
+        type="password"
+        formControlName="confirmacaoSenhaUsuario"
+        id="confirmar_senha_usuario"
+        placeholder="Insira sua senha"
+      />
+    </div>
+
+    <div *ngFor="let item of itensOpcaoInteresse" class="box">
+      <label for="{{ item.id }}"
+        ><input
+          id="{{ item.id }}"
+          type="checkbox"
+          [value]="item.conteudo"
+          formControlName="{{ item.nomeForm }}"
+        />{{ item.conteudo }}</label
+      >
+    </div>
+
+    <label for="outro_opcao">
+      Outro:
+      <input
+        id="outro_opcao"
+        formControlName="opcoesInteresseOutros"
+        type="text"
+      />
+    </label>
+
+    <div class="options">
+      <div class="container-btn">
+        <app-btn-default
+          title="Entrar"
+          color="#86AFDF"
+          block="true"
+          buttonType="submit"
+          width="250px"
+          height="50px"
+          [disabled]="!cadastroForm.valid"
+        ></app-btn-default>
+      </div>
+    </div>
+  </form>
+</div>
