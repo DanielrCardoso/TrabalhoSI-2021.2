@@ -14,7 +14,7 @@ export class MenuInferiorComponent implements OnInit {
     route.events.pipe(filter((evt: any) => evt instanceof RoutesRecognized), pairwise())
       .subscribe((events: RoutesRecognized[]) => {
         var url = events[1].urlAfterRedirects
-        if (url.includes('login') || url.includes('cadastro')) {
+        if (url.includes('login') || url.includes('cadastro')|| url.includes("home")) {
           this.visible = false
         }
         else {

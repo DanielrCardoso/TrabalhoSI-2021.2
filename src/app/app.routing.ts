@@ -11,7 +11,8 @@ import { TelaAulasComponent } from './modules/cursos/tela-aulas/tela-aulas.compo
 import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-criar-pergunta/tela-forum-criar-pergunta.component';
 
 const APP_ROUTES: Routes = [
-  { path: '', component: TelaInicialComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: TelaInicialComponent },
   { path: 'login', component: TelaLoginComponent },
   { path: 'cadastro', component: TelaCadastroComponent },
   { path: 'perfil', component: TelaPerfilComponent },

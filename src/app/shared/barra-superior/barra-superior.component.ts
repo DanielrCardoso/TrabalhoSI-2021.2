@@ -20,7 +20,7 @@ export class BarraSuperiorComponent implements OnInit {
       .subscribe((events: RoutesRecognized[]) => {
         var url = events[1].urlAfterRedirects
         var previousUrl = events[0].urlAfterRedirects
-        if (url.includes('login') || url.includes('cadastro')) {
+        if (url.includes('login') || url.includes('cadastro') || url.includes("home")) {
           this.visible = false
         }
         else {
