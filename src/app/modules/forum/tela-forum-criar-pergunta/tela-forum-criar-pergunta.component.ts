@@ -1,15 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-tela-forum-criar-pergunta',
   templateUrl: './tela-forum-criar-pergunta.component.html',
-  styleUrls: ['./tela-forum-criar-pergunta.component.scss']
+  styleUrls: ['./tela-forum-criar-pergunta.component.scss'],
 })
 export class TelaForumCriarPerguntaComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  formCadastroPergunta = new FormGroup({
+    tituloPergunta: new FormControl(),
+    corpoPergunta: new FormControl(),
+  });
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  onSubmit() {
+    console.log(this.formCadastroPergunta.value);
   }
-
 }
