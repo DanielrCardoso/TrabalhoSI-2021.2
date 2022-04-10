@@ -1,7 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import {routing} from './app.routing'
+import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './modules/login/tela-login/tela-login.component';
@@ -18,6 +18,8 @@ import { CardDicaComponent } from './shared/card-dica/card-dica.component';
 import { BarraSuperiorComponent } from './shared/barra-superior/barra-superior.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CardCursoComponent } from './shared/card-curso/card-curso.component';
+import { TelaForumVisualizarPerguntaComponent } from './modules/forum/tela-forum-visualizar-pergunta/tela-forum-visualizar-pergunta.component';
+import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-criar-pergunta/tela-forum-criar-pergunta.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,10 @@ import { CardCursoComponent } from './shared/card-curso/card-curso.component';
     CardDicaComponent,
     BarraSuperiorComponent,
     CardCursoComponent,
+    TelaForumVisualizarPerguntaComponent,
+    TelaForumCriarPerguntaComponent,
   ],
-  imports: [
-    BrowserModule, 
-    ReactiveFormsModule,
-    routing
-  ],
+  imports: [BrowserModule, ReactiveFormsModule, routing],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
