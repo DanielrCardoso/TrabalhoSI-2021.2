@@ -14,6 +14,8 @@ export class BtnDefaultComponent {
   @Input() target!: string;
   @Input() dismiss!: string;
   @Input() buttonType!: string;
+  @Input() height!: string;
+  @Input() width!: string;
 
   @Output() callParent = new EventEmitter<any>();
 
