@@ -1,6 +1,8 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import {routing} from './app.routing'
+
 import { AppComponent } from './app.component';
 import { TelaLoginComponent } from './modules/login/tela-login/tela-login.component';
 import { TelaInicialComponent } from './modules/inicio/tela-inicial/tela-inicial.component';
@@ -32,7 +34,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     CardDicaComponent,
     BarraSuperiorComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule],
+  imports: [
+    BrowserModule, 
+    ReactiveFormsModule,
+    routing
+  ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
