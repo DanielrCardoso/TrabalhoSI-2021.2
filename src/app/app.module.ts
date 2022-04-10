@@ -17,6 +17,7 @@ import { MenuInferiorComponent } from './shared/menu-inferior/menu-inferior.comp
 import { CardDicaComponent } from './shared/card-dica/card-dica.component';
 import { BarraSuperiorComponent } from './shared/barra-superior/barra-superior.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CardCursoComponent } from './shared/card-curso/card-curso.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MenuInferiorComponent,
     CardDicaComponent,
     BarraSuperiorComponent,
+    CardCursoComponent,
   ],
   imports: [
     BrowserModule, 

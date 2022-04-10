@@ -1,1 +1,10 @@
-<p>tela-aulas works!</p>
+<app-barra-superior></app-barra-superior>
+
+<div class="container-cursos">
+    <div *ngFor="let curso of cursos">
+        <app-card-curso tituloCurso={{curso.tituloCuso}} descricaoCurso={{curso.descricaoCurso}}>
+        </app-card-curso>
+    </div>
+</div>
+
+<app-menu-inferior></app-menu-inferior>
