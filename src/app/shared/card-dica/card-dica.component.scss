@@ -1,25 +1,57 @@
-.card-dica{
+.card-dica {
     background-color: #C4C4C4;
     word-break: break-all;
+    margin: 10px 10px 18px 10px;
+    border-radius: 10px;
 }
-.h1{
-    font-size: 29px;
+
+h1 {
+    font-weight: bold;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    font-size: 30px;
+    margin-bottom: 5px;
 }
-.p{
-    font-size: 35px;
-    
+
+p {
+    padding: 15px;
+    font-size: 25px;
 }
-.container-btns{
+
+.container-btns {
     width: 100%;
     height: 84px;
     background-color: #BAB5B5;
 }
-.curtir{
+
+.curtir {
+    padding: 0;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 30px;
     width: 50%;
     height: 100%;
 }
-.salvar{
-    width:50%;
-    height: 100%;
 
+.curtir:hover{
+    background-color: #8b8b8b;
+    color:white
+}
+
+.salvar {
+    padding: 0;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 30px;
+    width: 50%;
+    height: 100%;
+}
+
+.salvar:hover{
+    background-color: #8b8b8b;
+    color:white
 }
