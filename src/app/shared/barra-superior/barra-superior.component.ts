@@ -29,11 +29,12 @@ export class BarraSuperiorComponent implements OnInit {
 
         if(url.includes("/dicas") || url.includes("/forum") || url.includes("/aulas")){
           this.sair=true
+          if(url.includes("criar-topico")){
+            this.visible = true
+            this.sair=false
+            this.voltar = previousUrl
+          }
         }
-        // else if(url.includes("/aulas")){
-        //   this.sair=false
-        //   this.voltar = previousUrl
-        // }
       });
   }
 

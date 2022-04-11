@@ -1,5 +1,114 @@
-form{
+form {
     display: flex;
     flex-direction: column;
     margin-top: 100px;
+}
+
+$p: hsl(213deg 85% 97%);
+
+* {
+    font-family: 'Poppins'
+}
+
+@mixin screen {
+    background: $p;
+    // padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    // box-shadow: 0 0 2em hsl(231deg 62% 94%);
+}
+
+.container-criar-pergunta {
+    @include screen;
+    user-select: none;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2em;
+
+    h1 {
+        margin-top: -3em;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .box {
+        margin-top: 0.1em;
+        .titulo_pergunta {
+            margin-left: -10px;
+            width: 300px;
+            background: hsl(0deg 0% 100%);
+            box-shadow: 0 0 2em hsl(231deg 62% 94%);
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            border-radius: 20px;
+            color: hsl(0deg 0% 30%);
+            margin-top: 2em;
+            margin-bottom: 1em;
+
+            label {
+                font-size: 30px;
+                color: black;
+            }
+
+            input {
+                width: 100%;
+                outline: none;
+                border: none;
+                color: rgb(61, 61, 61);
+                font-size: 27px;
+            }
+        }
+
+        .corpo_pergunta {
+            margin-left: -10px;
+            width: 300px;
+            height: 400px;
+            background: hsl(0deg 0% 100%);
+            box-shadow: 0 0 2em hsl(231deg 62% 94%);
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            border-radius: 20px;
+            color: hsl(0deg 0% 30%);
+            margin-bottom: 0.4em;
+
+            label {
+                font-size: 30px;
+                color: black;
+            }
+
+            textarea {
+                height: 350px;
+                width: 100%;
+                outline: none;
+                border: none;
+                color: rgb(61, 61, 61);
+                font-size: 27px;
+            }
+        }
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container-btn {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        p {
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+            font-size: 1.4rem;
+        }
+    }
 }

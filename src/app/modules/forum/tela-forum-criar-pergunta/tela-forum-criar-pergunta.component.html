@@ -1,34 +1,29 @@
-<app-barra-superior></app-barra-superior>
-<form [formGroup]="formCadastroPergunta" (ngSubmit)="onSubmit()">
-  <label for="titulo_pergunta">
-    <input
-      placeholder="Título da sua dúvida."
-      type="text"
-      id="titulo_pergunta"
-      formControlName="tituloPergunta"
-    />
-  </label>
-  <label for="corpo_pergunta">
-    <input
-      placeholder="Descreva sua dúvida."
-      type="text"
-      id="corpo_pergunta"
-      formControlName="corpoPergunta"
-    />
-  </label>
+<div class="container-criar-pergunta">
+  <form [formGroup]="formCadastroPergunta" (ngSubmit)="onSubmit()">
+    <h1>Tire sua duvida:</h1>
 
-  <div class="options">
-    <div class="container-btn">
-      <app-btn-default
-        title="Publicar"
-        color="#86AFDF"
-        block="true"
-        buttonType="submit"
-        width="250px"
-        height="50px"
-        [disabled]="!formCadastroPergunta.valid"
-      ></app-btn-default>
+    <div class="box">
+      <div class="titulo_pergunta">
+        <label for="titulo_pergunta">
+          Titulo:
+          <input placeholder="Título da sua dúvida." type="text" id="titulo_pergunta"
+            formControlName="tituloPergunta" />
+        </label>
+      </div>
+
+      <div class="corpo_pergunta">
+        <label for="corpo_pergunta">
+          Pergunta:
+          <textarea name = "Pergunta"  cols="40" rows="5" placeholder="Descreva sua dúvida." id="corpo_pergunta" formControlName="corpoPergunta"></textarea>
+        </label>
+      </div>
     </div>
-  </div>
-</form>
-<app-menu-inferior></app-menu-inferior>
+    
+    <div class="options">
+      <div class="container-btn">
+        <app-btn-default title="Publicar" color="#86AFDF" block="true" buttonType="submit" width="250px" height="50px"
+          [disabled]="!formCadastroPergunta.valid"></app-btn-default>
+      </div>
+    </div>
+  </form>
+</div>

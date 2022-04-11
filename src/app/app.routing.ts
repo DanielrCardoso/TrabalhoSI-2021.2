@@ -9,6 +9,7 @@ import { TelaDicasComponent } from './modules/dicas/tela-dicas/tela-dicas.compon
 import { TelaForumComponent } from './modules/forum/tela-forum/tela-forum.component';
 import { TelaAulasComponent } from './modules/cursos/tela-aulas/tela-aulas.component';
 import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-criar-pergunta/tela-forum-criar-pergunta.component';
+import { TelaForumVisualizarPerguntaComponent } from './modules/forum/tela-forum-visualizar-pergunta/tela-forum-visualizar-pergunta.component';
 
 const APP_ROUTES: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,8 @@ const APP_ROUTES: Routes = [
   { path: 'perfil', component: TelaPerfilComponent },
   { path: 'dicas', component: TelaDicasComponent },
   { path: 'forum', component: TelaForumComponent },
+  {path:'forum/criar-topico',component:TelaForumCriarPerguntaComponent},
+  {path:'forum/visualizar-pergunta',component:TelaForumVisualizarPerguntaComponent},
   { path: 'aulas', component: TelaAulasComponent },
   { path: 'criar-pergunta', component: TelaForumCriarPerguntaComponent },
 ];
