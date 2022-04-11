@@ -1,13 +1,22 @@
 .menu-inferior{
+    display: flex;
+    justify-content: space-around;
     position: fixed;
     top: 99%;
     width: 100vw;
     margin-top: -2.5em;
 }
 button{
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 5px;
     width: 33vw;
     height: 50px;
     color: rgb(0, 0, 0);
     background-color: #86AFDF;
     font-size: 30px;
+}
+button:hover{
+    color: white
 }
