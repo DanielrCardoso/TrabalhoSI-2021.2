@@ -30,16 +30,20 @@
       />
     </div>
 
-    <div *ngFor="let item of itensOpcaoInteresse" class="box">
-      <label for="{{ item.id }}"
-        ><input
-          id="{{ item.id }}"
-          type="checkbox"
-          [value]="item.conteudo"
-          formControlName="{{ item.nomeForm }}"
-        />{{ item.conteudo }}</label
-      >
-    </div>
+    <div class="box-checkbox">
+      <label class="label-box">Selecione seus interesses:</label>
+      <div *ngFor="let item of itensOpcaoInteresse">
+        <label for="{{ item.id }}"
+          ><input
+            id="{{ item.id }}"
+            type="checkbox"
+            [value]="item.conteudo"
+            formControlName="{{ item.nomeForm }}"
+          />{{ item.conteudo }}</label
+        >
+      </div>
+
+
 
     <label for="outro_opcao">
       Outro:
@@ -49,6 +53,7 @@
         type="text"
       />
     </label>
+  </div>
 
     <div class="options">
       <div class="container-btn">
