@@ -1,25 +1,29 @@
-.container-barra-superior{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-position: fixed;
-top: 0%;
-width: 100vw;
-height: 40px;
-background-color: yellow;
+.container-barra-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(243, 243, 243);
 }
-.sair{
-height: 100%;
-width: 40px;
-background-color: red;
-}
-.voltar{
+
+.sair {
     height: 100%;
     width: 40px;
-    background-color: red;
+    font-size: 25px;
 }
-.perfil{
-    height: 100%;;
+
+.voltar {
+    height: 100%;
     width: 40px;
-    background-color: blue;
+    font-size: 25px;
+}
+
+.perfil {
+    height: 100%;
+    width: 40px;
+    font-size: 25px;
+    padding-right: 20px;
 }
