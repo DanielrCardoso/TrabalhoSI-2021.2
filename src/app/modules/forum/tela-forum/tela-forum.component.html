@@ -1,5 +1,8 @@
-
-<p style="margin-top: 200px;">tela-forum works!</p>
-<a routerLink="/forum/criar-topico"> criar pergunta</a>
-<br>
-<a routerLink="/forum/visualizar-pergunta">visualizar pergunta</a>
+<div class="container-duvidas">
+    <a routerLink="/forum/criar-topico"> criar pergunta</a>
+    <br>
+    <a routerLink="/forum/visualizar-pergunta">visualizar pergunta</a>
+    <div *ngFor="let duvida of duvidas">
+        <app-card-duvida titulo="{{duvida.titulo}}"></app-card-duvida>
+    </div>
+</div>

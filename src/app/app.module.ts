@@ -20,6 +20,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CardCursoComponent } from './shared/card-curso/card-curso.component';
 import { TelaForumVisualizarPerguntaComponent } from './modules/forum/tela-forum-visualizar-pergunta/tela-forum-visualizar-pergunta.component';
 import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-criar-pergunta/tela-forum-criar-pergunta.component';
+import { CardDuvidaComponent } from './shared/card-duvida/card-duvida.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-cria
     CardCursoComponent,
     TelaForumVisualizarPerguntaComponent,
     TelaForumCriarPerguntaComponent,
+    CardDuvidaComponent,
   ],
   imports: [BrowserModule, ReactiveFormsModule, routing],
   providers: [],
