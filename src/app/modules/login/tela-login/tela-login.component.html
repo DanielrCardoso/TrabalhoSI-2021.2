@@ -2,29 +2,49 @@
   <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
     <div class="box">
       <label for="nome_usuario">Nome de usuário:</label>
-      <input type="text" formControlName="nomeUsuario" id="nome_usuario" placeholder="Insira seu usuario" />
+      <input
+        type="text"
+        formControlName="nomeUsuario"
+        id="nome_usuario"
+        placeholder="Insira seu usuario"
+      />
     </div>
 
     <div class="box">
       <label for="senha_usuario">Senha:</label>
-      <input type="password" formControlName="senhaUsuario" id="senha_usuario" placeholder="Insira sua senha" />
+      <input
+        type="password"
+        formControlName="senhaUsuario"
+        id="senha_usuario"
+        placeholder="Insira sua senha"
+      />
     </div>
-
 
     <div class="options">
       <div class="container-btn" routerLink="/dicas">
-        <app-btn-default title="Entrar" color="#86AFDF" block="true" buttonType="submit" width="250px" height="50px"></app-btn-default>
+        <app-btn-default
+          title="Entrar"
+          color="rgb(168, 192, 199)"
+          block="true"
+          buttonType="submit"
+          width="250px"
+          height="50px"
+        ></app-btn-default>
       </div>
 
       <p>OU</p>
 
       <div class="container-btn" routerLink="/cadastro">
-        <app-btn-default title="Criar Conta" color="#86AFDF" block="true" width="250px" height="50px"></app-btn-default>
+        <app-btn-default
+          title="Criar Conta"
+          color="rgb(168, 192, 199)"
+          block="true"
+          width="250px"
+          height="50px"
+        ></app-btn-default>
       </div>
 
-      
-<a><p class="forgetPass">Esqueceu sua senha? clique aqui.</p></a>
+      <a><p class="forgetPass">Esqueceu sua senha? clique aqui.</p></a>
     </div>
   </form>
-
 </div>
