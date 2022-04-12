@@ -1,3 +1,24 @@
+$p: rgb(234, 235, 237);
+
+@mixin screen {
+    padding: 10%;
+    background: $p;
+    // padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    // box-shadow: 0 0 2em hsl(231deg 62% 94%);
+}
 .container-dicas{
+    @include screen;
     margin-top: 45px;
+    
+    user-select: none;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+* {
+    font-family: 'Poppins'
 }
