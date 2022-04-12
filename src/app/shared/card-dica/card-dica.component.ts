@@ -1,16 +1,19 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { faBookmark, faHeart } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-card-dica',
   templateUrl: './card-dica.component.html',
-  styleUrls: ['./card-dica.component.scss']
+  styleUrls: ['./card-dica.component.scss'],
 })
 export class CardDicaComponent implements OnInit {
-  @Input() tituloDica!: string
-  @Input() dica!: string
-  constructor() { }
+  @Input() tituloDica!: string;
+  @Input() dica!: string;
 
-  ngOnInit(): void {
-  }
+  faBookmark = faBookmark;
+  faHeart = faHeart;
 
+  constructor() {}
+
+  ngOnInit(): void {}
 }
