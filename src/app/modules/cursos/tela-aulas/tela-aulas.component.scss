@@ -1,3 +1,18 @@
-.container-cursos{
-    margin-top: 45px;
+$p: rgb(234, 235, 237);
+
+@mixin screen {
+  padding: 10%;
+  background: $p;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-cursos {
+  @include screen;
+  margin-top: 40px;
+
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
 }

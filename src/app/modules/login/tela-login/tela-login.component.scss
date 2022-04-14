@@ -1,70 +1,69 @@
 $p: rgb(234, 235, 237);
 
 * {
-    font-family: 'Poppins'
+  font-family: 'Poppins'
 }
 
 @mixin screen {
-    background: $p;
-    // padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    // box-shadow: 0 0 2em hsl(231deg 62% 94%);
+  background: $p;
+  // padding: 2em;
+  display: flex;
+  flex-direction: column;
+  // box-shadow: 0 0 2em hsl(231deg 62% 94%);
 }
 
 .container-login {
-    @include screen;
-    user-select: none;
-    overflow-y: hidden;
+  @include screen;
+  user-select: none;
+  overflow-y: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2em;
+
+  .box {
+    margin-left: -10px;
+    width: 300px;
+    background: hsl(0deg 0% 100%);
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-radius: 20px;
+    color: hsl(0deg 0% 30%);
+    margin-bottom: 2em;
+
+    label {
+      font-size: 25px;
+      color: black;
+    }
+
+    input {
+      width: 100%;
+      outline: none;
+      border: none;
+      color: rgb(61, 61, 61);
+      font-size: 30px;
+    }
+
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    gap: 2em;
 
-    .box {
-        margin-left: -10px;
-        width: 300px;
-        background: hsl(0deg 0% 100%);
-        box-shadow: 0 0 2em hsl(231deg 62% 94%);
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        border-radius: 20px;
-        color: hsl(0deg 0% 30%);
-        margin-bottom: 2em;
-
-        label {
-            font-size: 25px;
-            color: black;
-        }
-
-        input {
-            width: 100%;
-            outline: none;
-            border: none;
-            color: rgb(61, 61, 61);
-            font-size: 30px;
-        }
-
+    .container-btn {
+      margin-top: 5%;
+      margin-bottom: 5%;
     }
 
-    .options {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .container-btn {
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-
-        p{
-            margin-top: 0.2em;
-            margin-bottom: 0.2em;
-            font-size: 1.4rem;
-        }
+    p {
+      margin-top: 0.2em;
+      margin-bottom: 0.2em;
+      font-size: 1.4rem;
     }
+  }
 }
