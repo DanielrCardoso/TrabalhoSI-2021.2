@@ -1,8 +1,11 @@
 <div class="container-duvidas">
-    <a routerLink="/forum/criar-topico"> criar pergunta</a>
-    <br>
-    <a routerLink="/forum/visualizar-pergunta">visualizar pergunta</a>
-    <div *ngFor="let duvida of duvidas">
-        <app-card-duvida titulo="{{duvida.titulo}}"></app-card-duvida>
-    </div>
+  <div class="container-bts">
+    <button routerLink="/forum/criar-topico">Criar Pergunta</button>
+  </div>
+  <div routerLink="/forum/visualizar-pergunta" *ngFor="let duvida of duvidas">
+    <app-card-duvida
+      titulo="{{ duvida.titulo }}"
+      autor="{{ duvida.autor }}"
+    ></app-card-duvida>
+  </div>
 </div>
