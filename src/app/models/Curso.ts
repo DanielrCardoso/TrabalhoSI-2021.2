@@ -1,4 +1,5 @@
 export interface Curso{
     idCurso : number;
-    nomeCurso : string;
+    tituloCuso : string;
+    descricaoCurso : string;
 }

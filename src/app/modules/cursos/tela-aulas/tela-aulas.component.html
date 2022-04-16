@@ -1,6 +1,8 @@
 <div class="container-cursos">
-    <div *ngFor="let curso of cursos">
-        <app-card-curso tituloCurso={{curso.tituloCuso}} descricaoCurso={{curso.descricaoCurso}}>
-        </app-card-curso>
+    <div *ngIf="cursos$ | async as curso">
+        <div *ngFor="let itemcurso of curso">
+            <app-card-curso tituloCurso={{itemcurso.tituloCuso}} descricaoCurso={{itemcurso.descricaoCurso}}>
+            </app-card-curso>
+        </div>
     </div>
 </div>

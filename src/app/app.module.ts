@@ -24,6 +24,7 @@ import { CardDuvidaComponent } from './shared/card-duvida/card-duvida.component'
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { environment } from '../environments/environment';
     TelaForumCriarPerguntaComponent,
     CardDuvidaComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, routing, FontAwesomeModule, ServiceWorkerModule.register('ngsw-worker.js', {
+  imports: [HttpClientModule,BrowserModule, ReactiveFormsModule, routing, FontAwesomeModule, ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: environment.production,
   // Register the ServiceWorker as soon as the application is stable
   // or after 30 seconds (whichever comes first).
