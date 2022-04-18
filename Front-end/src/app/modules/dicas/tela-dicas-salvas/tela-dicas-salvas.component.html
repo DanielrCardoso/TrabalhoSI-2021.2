@@ -1,0 +1,8 @@
+<div class="container-dicas">
+    <div *ngIf="dicasSalvas$ | async as dicas">
+      <div *ngFor="let dica of dicas">
+        <app-card-dica tituloDica="{{ dica.tituloDica }}" dica="{{ dica.corpoDica }}" idDica="{{dica.id}}">
+        </app-card-dica>
+      </div>
+    </div>
+  </div>

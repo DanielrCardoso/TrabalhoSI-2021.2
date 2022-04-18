@@ -3,8 +3,11 @@
   <p>{{ dica }}</p>
 
   <div class="container-btns">
-    <button class="curtir"><fa-icon [icon]="faHeart"></fa-icon> Curtir</button>
-    <button class="salvar">
+    <button class="curtir" (click)="curtir()">
+      <fa-icon [icon]="faHeart"></fa-icon> Curtir
+    </button>
+    
+    <button class="salvar" (click)="salvar()">
       <fa-icon [icon]="faBookmark"></fa-icon> Salvar
     </button>
   </div>

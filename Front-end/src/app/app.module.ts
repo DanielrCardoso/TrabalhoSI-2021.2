@@ -25,6 +25,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { TelaDicasSalvasComponent } from './modules/dicas/tela-dicas-salvas/tela-dicas-salvas.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     TelaForumVisualizarPerguntaComponent,
     TelaForumCriarPerguntaComponent,
     CardDuvidaComponent,
+    TelaDicasSalvasComponent,
   ],
   imports: [HttpClientModule,BrowserModule, ReactiveFormsModule, routing, FontAwesomeModule, ServiceWorkerModule.register('ngsw-worker.js', {
   enabled: environment.production,

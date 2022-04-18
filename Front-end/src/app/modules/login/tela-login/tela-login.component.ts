@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { UsuarioServiceService } from 'src/app/services/usuario-service.service';
 
 @Component({
   selector: 'app-tela-login',
@@ -12,11 +13,18 @@ export class TelaLoginComponent implements OnInit {
     senhaUsuario: new FormControl('', Validators.required),
   });
 
-  constructor() {}
+  constructor(private usuarioService: UsuarioServiceService) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onSubmit() {
-    console.log(this.loginForm.value);
+    console.log(this.loginForm.value.nomeUsuario);
+
+    var user = {
+      nome: this.loginForm.value.nomeUsuario,
+      senha: this.loginForm.value.senhaUsuario,
+    }
+    var usuario = this.usuarioService.getUser(user)
+    console.log(usuario)
   }
 }

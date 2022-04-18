@@ -1,8 +1,8 @@
 exports.CURSOS = [
 
     {
-        tituloCuso: "Curso 01",
-        descricaoCurso: "Breve descricao"
+        tituloCuso: "Faça transações em bancos",
+        descricaoCurso: "aprenda o basico da utilização do aplicativo do seu banco"
     },
     {
         tituloCuso: "Curso 02",
