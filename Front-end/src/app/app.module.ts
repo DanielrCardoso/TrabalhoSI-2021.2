@@ -22,6 +22,9 @@ import { TelaForumVisualizarPerguntaComponent } from './modules/forum/tela-forum
 import { TelaForumCriarPerguntaComponent } from './modules/forum/tela-forum-criar-pergunta/tela-forum-criar-pergunta.component';
 import { CardDuvidaComponent } from './shared/card-duvida/card-duvida.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -43,7 +46,12 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     TelaForumCriarPerguntaComponent,
     CardDuvidaComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, routing, FontAwesomeModule],
+  imports: [HttpClientModule,BrowserModule, ReactiveFormsModule, routing, FontAwesomeModule, ServiceWorkerModule.register('ngsw-worker.js', {
+  enabled: environment.production,
+  // Register the ServiceWorker as soon as the application is stable
+  // or after 30 seconds (whichever comes first).
+  registrationStrategy: 'registerWhenStable:30000'
+})],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],

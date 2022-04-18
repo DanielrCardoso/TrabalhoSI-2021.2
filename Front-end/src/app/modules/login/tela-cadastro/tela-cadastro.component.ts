@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UsuarioServiceService } from 'src/app/services/usuario-service.service';
 
 @Component({
   selector: 'app-tela-cadastro',
@@ -34,7 +35,7 @@ export class TelaCadastroComponent implements OnInit {
   ];
 
   cadastroForm = new FormGroup({
-    nomeUsuario: new FormControl('', Validators.required),
+    nome: new FormControl('', Validators.required),
     senhaUsuario: new FormControl('', Validators.required),
     confirmacaoSenhaUsuario: new FormControl('', Validators.required),
     opcaoInteresseAplicativosBanco: new FormControl(),
@@ -44,13 +45,13 @@ export class TelaCadastroComponent implements OnInit {
     opcoesInteresseOutros: new FormControl(),
   });
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private UsuarioService:UsuarioServiceService) {}
 
   ngOnInit(): void {}
 
   onSubmit() {
     console.log(this.cadastroForm.value);
-
+    this.UsuarioService.cadastrarUsuario(this.cadastroForm.value)
     if (this.cadastroForm.value) {
       this.router.navigate(['/login/']);
     }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ForumServiceService } from 'src/app/services/forum-service.service';
 
 @Component({
   selector: 'app-tela-forum-criar-pergunta',
@@ -7,7 +8,7 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./tela-forum-criar-pergunta.component.scss'],
 })
 export class TelaForumCriarPerguntaComponent implements OnInit {
-  constructor() {}
+  constructor(private ForumService:ForumServiceService) {}
 
   formCadastroPergunta = new FormGroup({
     tituloPergunta: new FormControl(),
@@ -18,5 +19,6 @@ export class TelaForumCriarPerguntaComponent implements OnInit {
 
   onSubmit() {
     console.log(this.formCadastroPergunta.value);
+    this.ForumService.salvarDuvida(this.formCadastroPergunta.value)
   }
 }
