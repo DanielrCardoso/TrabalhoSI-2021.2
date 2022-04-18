@@ -9,7 +9,7 @@ Disponível em https://nodejs.org/en/
 
 ## Angular
 ```  
-npm install -g @angular/cli@1.0.0 
+npm install -g @angular/cli@13.3.2 
 ```
 Para mais informações visite a documentação oficial em https://angular.io/cli
 
