@@ -29,19 +29,3 @@
   ]
 
 }
-
-  // "dataGroups": [
-  //   {
-  //     "nome":"API_TraballhoSI-2021.2",
-  //     "urls":[
-  //       "aaaaaaaaaaaa"
-  //     ],
-  //     "cacheConfig": {
-  //       "strategy": "performance",
-  //       "maxSize": 100000,
-  //       "maxAge": "24h",
-  //       "timeout": "2s"
-  //     }
-      
-  //   }
-  // ]

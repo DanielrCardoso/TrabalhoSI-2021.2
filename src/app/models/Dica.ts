@@ -1,5 +1,5 @@
 export interface Dica{
-    titulo: string
-    corpodica: string
+    tituloDica: string
+    corpoDica: string
     id: string
 }

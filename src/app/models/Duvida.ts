@@ -5,6 +5,4 @@ export interface Duvida {
     corpoPergunta:string;
     idPergunta:number;
     autor:string;
-    
-    respostas:Resposta[];
 }

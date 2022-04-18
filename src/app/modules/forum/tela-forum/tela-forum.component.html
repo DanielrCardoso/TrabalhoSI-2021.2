@@ -2,9 +2,10 @@
   <div class="container-bts">
     <button routerLink="/forum/criar-topico">Criar Pergunta</button>
   </div>
+  <div *ngIf="duvidas$ | async as duvidas">
   <div routerLink="/forum/visualizar-pergunta" *ngFor="let duvida of duvidas">
     <app-card-duvida
-      titulo="{{ duvida.titulo }}"
+      titulo="{{ duvida.tituloPergunta }}"
       autor="{{ duvida.autor }}"
     ></app-card-duvida>
   </div>
