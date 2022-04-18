@@ -2,14 +2,75 @@
     <h1>New 2000</h1>
     <p>
         A new 2000 é uma plataforma voltada para o ensino de novas tecnologias para todos os públicos.
-        Aqui você conta com:<br>
-
-        <br>
-        -Dicas diárias.<br>
-        -Cursos pensados nas suas necessidades.<br>
-        -Fórum seguro para tirar todas as suas duvidas.
-    </p>
-
+        Aqui você conta com:<br></p>
+        <section class="carousel" aria-label="Gallery">
+            <ol class="carousel__viewport">
+              <li id="carousel__slide1"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                  <a href="#carousel__slide4"
+                     class="carousel__prev">Go to last slide</a>
+                  <a href="#carousel__slide2"
+                     class="carousel__next">Go to next slide</a>
+                    <div class="content">Dicas diárias</div>
+                </div>
+              </li>
+              <li id="carousel__slide2"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div class="content">Cursos pensados nas suas necessidades</div>
+                </div>
+                <a href="#carousel__slide1"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide3"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide3"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div class="content">Fórum seguro para tirar todas as suas duvidas</div>
+                </div>
+                <a href="#carousel__slide2"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide4"
+                   class="carousel__next">Go to next slide</a>
+              </li>
+              <li id="carousel__slide4"
+                  tabindex="0"
+                  class="carousel__slide">
+                <div class="carousel__snapper">
+                    <div class="content">Interface de uso amigável</div>
+                </div>
+                <a href="#carousel__slide3"
+                   class="carousel__prev">Go to previous slide</a>
+                <a href="#carousel__slide1"
+                   class="carousel__next">Go to first slide</a>
+              </li>
+            </ol>
+            <aside class="carousel__navigation">
+              <ol class="carousel__navigation-list">
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide1"
+                     class="carousel__navigation-button">Go to slide 1</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide2"
+                     class="carousel__navigation-button">Go to slide 2</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide3"
+                     class="carousel__navigation-button">Go to slide 3</a>
+                </li>
+                <li class="carousel__navigation-item">
+                  <a href="#carousel__slide4"
+                     class="carousel__navigation-button">Go to slide 4</a>
+                </li>
+              </ol>
+            </aside>
+          </section>
     <div class="container-btn" routerLink="/login">
         <app-btn-default title="Entrar" color="#86AFDF" block=true width="250px" height="50px"></app-btn-default>
     </div>
