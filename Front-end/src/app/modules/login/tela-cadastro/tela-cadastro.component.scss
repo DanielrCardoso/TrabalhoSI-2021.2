@@ -9,7 +9,7 @@ $p: hsl(213deg 85% 97%);
     // padding: 2em;
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
+    // border-radius: 30px;
     // box-shadow: 0 0 2em hsl(231deg 62% 94%);
 }
 
@@ -87,4 +87,9 @@ $p: hsl(213deg 85% 97%);
             font-size: 1.4rem;
         }
     }
+}
+a{
+
+    margin-left: 15px;
+    font-size: 20px;
 }

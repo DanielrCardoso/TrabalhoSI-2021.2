@@ -13,7 +13,12 @@ export class UsuarioServiceService {
 
   cadastrarUsuario(usuario:Usuario){
     this.http.post(this.API_Cursos+'/api/USUARIOS',usuario).subscribe(
-      ()=>alert("Ola " + usuario.nome)
+      ()=>alert("Ola " + usuario.nome),
+      (err)=>alert("Erro ao cadastrar usuario")
     )
+  }
+
+  getUser(user:any){
+    return this.http.get<Usuario>(this.API_Cursos + "/api/USUARIOS/"+user)
   }
 }

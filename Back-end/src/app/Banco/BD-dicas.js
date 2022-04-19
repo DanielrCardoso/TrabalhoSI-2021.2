@@ -1,11 +1,11 @@
 exports.DICAS = [
     {
-        tituloDica: 'Titulo dica',
-        corpoDica: 'corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica',
+        tituloDica: 'Não salve senhas no navegador',
+        corpoDica: 'Salvar senha no navegador é um habito ruim principalmente em computadores comartilhados.',
         id: '01',
     },
     {
-        tituloDica: 'Titulo dica',
+        tituloDica: 'Use senhas fortes',
         corpoDica: 'corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica corpo da dica',
         id: '01',
     },
