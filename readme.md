@@ -22,10 +22,24 @@ Entre na pasta do projeto:
 ```  
 cd TrabalhoSI-2021.2
 ```
-Instale as dependências do projeto:
+
+Entre na pasta do frontend:
+```  
+cd Front-end/
+```
+Instale as dependências do frontend:
 ```  
 npm install
-``` 
+```
+
+Entre na pasta do backend:
+```  
+cd Back-end/
+```
+Instale as dependências do backend:
+```  
+npm install
+```
 
 Existem duas maneiras de executar o projeto:
 
